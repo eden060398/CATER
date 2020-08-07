@@ -68,7 +68,7 @@ TEST:
 
 SOLVER:
   LR_POLICY: 'steps_with_relative_lrs' # 'step', 'steps_with_lrs', 'steps_with_relative_lrs', 'steps_with_decay'
-  BASE_LR: 0.0025  # Half of the normal, since batch size is half of normal
+  BASE_LR: 0.000625  # Half (eigth) of the normal, since batch size is half of normal
   STEP_SIZES: [20000, 14000, 6000] # [150150, 150150, 150150] # 30, 30, 30 epochs
   LRS: [1.0, 0.1, 0.01, 0.001]  # since the batch size is 1/2
   MAX_ITER: 30000 # 20000, but need to see when it converges
