@@ -1,6 +1,3 @@
-[submodule "baselines/caffe2"]
-	path = baselines/caffe2
-	url = https://github.com/caffe2/caffe2.git
 [submodule "baselines/c2board"]
 	path = baselines/c2board
 	url = https://github.com/endernewton/c2board.git
