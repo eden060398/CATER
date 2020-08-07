@@ -6,7 +6,7 @@ import numpy as np
 
 
 # Set this to the dataset/task you need to convert to LMDB
-DIR_TO_PROCESS = '/scratch/rgirdhar/release/all_actions/lists/localize/'
+DIR_TO_PROCESS = '/content/data/max2action/lists/actions_order_uniq/'
 
 
 def mkdir_p(path):

@@ -198,7 +198,7 @@ def get_gpu_stats():
             out_dict[key] = val
         except Exception:
             pass
-    used_gpu_memory = out_dict['Used GPU Memory']
+    used_gpu_memory = out_dict.get('Used GPU Memory', 'N/A')
     return used_gpu_memory
 
 
