@@ -19,6 +19,7 @@ MODEL:
   BN_INIT_GAMMA: 0.0
   DEPTH: 50
   VIDEO_ARC_CHOICE: 2
+  MULTILABEL: True
 
 RESNETS:
   NUM_GROUPS: 1  # ResNet: 1x; RESNETS: 32x
@@ -62,7 +63,7 @@ TEST:
   VIDEO_LENGTH: 32  # default: 32  # <===============
   SAMPLE_RATE: 8  # default: 2  # <===============
 
-  OUTPUT_NAME: softmax # output layer name
+  OUTPUT_NAME: activation # output layer name
   NUM_TEST_CLIPS: 30 # 10 clips and 3 crops per clip. These are hard-coded in the LMDB generation script (process_data/..)
 
 SOLVER:
